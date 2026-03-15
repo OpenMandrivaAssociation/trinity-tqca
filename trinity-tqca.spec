@@ -11,8 +11,6 @@
 %define libname %mklibname %{tde_pkg}
 %define devname %mklibname %{tde_pkg} -d
 
-%define libtqt3 %{_lib}tqt3
-
 %undefine __brp_remove_la_files
 %define dont_remove_libtool_files 1
 %define _disable_rebuild_configure 1
@@ -85,7 +83,7 @@ application!
 %package -n %{devname}
 Summary:	TQt Cryptographic Architecture development files
 Group:		Development/Libraries/C and C++
-Requires:	%{libname}1 = %{?epoch:%{epoch}:}%{version}-%{release}
+Requires:	%{libname}1 = %{EVRD}
 
 %description -n %{devname}
 This packages contains the development files for TQCA
