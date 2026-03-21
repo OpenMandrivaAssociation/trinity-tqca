@@ -39,6 +39,7 @@ BuildOption:    -DWITH_GCC_VISIBILITY=%{!?with_clang:ON}%{?with_clang:OFF}
 
 BuildRequires:  pkgconfig(tqt)
 BuildRequires:	trinity-tde-cmake >= %{tde_version}
+BuildRequires:  tqt3-dev-tools
 
 %{!?with_clang:BuildRequires:	gcc-c++}
 
